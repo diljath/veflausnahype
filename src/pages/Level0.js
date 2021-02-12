@@ -11,7 +11,7 @@ const Level0 = ({ onClick }) => {
       <Description text=" "></Description>
       <Description text="Ert þú nógu hype?"></Description>
       <Description text=" Tjékkaðu á því með þessum bráðskemmtilega og nýtískulega HYPE-leik!"></Description>
-      <Description text="psst. hafðu kveikt á heyrnartólunum <3"></Description>
+      <Description text="psst. hafðu kveikt á heyrnartólunum og settu Oppa Gagnam style í gang uppí horninu <3"></Description>
       <NormalButton text="START" onClick={onClick} level="level1" />
     </Container>
   );
