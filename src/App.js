@@ -8,7 +8,7 @@ import Level4 from './pages/Level4'
 import Level5 from './pages/Level5'
 
 const App = () => {
-    const [activeLevel, setActiveLevel] = React.useState('level5')
+    const [activeLevel, setActiveLevel] = React.useState('level0')
     function clickHandler (level) {
       setActiveLevel(level);
     }
