@@ -21,11 +21,12 @@ const buttonClicked = () => {
     setShowNextButton(false)
 
 }
-    return (<div>
+    return (<Main>
       <Header image="/level3.gif" />
 <Description text={text} />
+{!showFinalButton && <Description text="Sendið henni fallegt email til að gleðja hana!" /> }
 { !showFinalButton && <StyledA href={`mailto: hrafnhildur.sverrisdottir@advania.is?subject=${Subject}&body=${Message}`} onClick={() => showButton()}> 
-Sendið henni fallegt email til að gleðja hana!
+SENDA EMAIL
 </StyledA>}
 <Container>
 
@@ -33,21 +34,23 @@ Sendið henni fallegt email til að gleðja hana!
 {showNextButton && <NormalButton text="Búin/n?" onClick={buttonClicked} level="hehe"/>}
 {showFinalButton && <NormalButton text="Áfram" onClick={onClick} level="level4"/>}
 </Container>
-        </div>)
+        </Main>)
 }
+const Main = styled.div`
+  text-align: center;
+`;
 const Container = styled.div`
   display: flex;
   margin-top: 20px;
   justify-content: space-between;
 `;
 const StyledA = styled.a`
-    
    text-decoration: none;
    color: violet;
    background-color: beige;
    border: 1px solid #d4d4d4;
    font-size: 30px;
-   padding: 10px;
+   padding: 20px;
 `;
 const StyledImg = styled.div`
     background-image: url(${props => props.image});
