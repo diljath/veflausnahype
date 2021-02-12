@@ -2,40 +2,16 @@ import React from "react";
 import Header from "../components/Header";
 import Description from "../components/Description";
 import styled from "styled-components";
-import NormalButton from "../components/normalButton";
-import { useRouter } from 'next/router'
-import {
-  RadioGroup,
-  FormControl,
-  Radio,
-  FormLabel,
-  FormControlLabel,
-} from "@material-ui/core";
 
 const Level5 = ({ onClick }) => {
-  const [dadi, setDadi] = React.useState("/daðilost.png");
-  const [geit, setGeit] = React.useState("/ikeageit.jpg");
-  const [header, setHeader] = React.useState("Takk fyrir að hype-a þig upp með Veflausnum!");
+  const [header, setHeader] = React.useState("Þú ert svo sannarlega HYPE!");
   const [text, setText] = React.useState("");
-  const [showNextButton, setShowNextButton] = React.useState(false);
-  const [showFinalButton, setShowFinalButton] = React.useState(false);
-  const showButton = () => {
-    setShowNextButton(true);
-  };
-
-  const [eldfaeri, setEldfaeri] = React.useState("");
-  const [clothes, setClothes] = React.useState("");
-  const [alibi, setAlibi] = React.useState("");
- 
   const stig = Math.floor(Math.random()*394);
   if(stig < 100 ) {
     console.log(stig)
     setText("(Hefðir nú geta gert betur enn þetta...)")
   }
-  const router = useRouter()
-  const handleClick = () => {
-    router.push("https://youtu.be/kfVsfOSbJY0")
-  }
+ 
   return (
     <Main>
       <Header image="/success.gif" />
