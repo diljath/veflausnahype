@@ -15,7 +15,6 @@ const WoWButton = styled(Button)`
     width: max(200px, 13.88vw);
     height: max(100px, 6.94vw);
     margin: 30px;
-    margin-top: 300px;
     font-size: 48px;
 }
 `;
