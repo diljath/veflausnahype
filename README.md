@@ -1,5 +1,5 @@
 ---
-title: 'Snákur’s Sleepover'
+title: '*Snákur’s* Sleepover'
 teacher1: Elisabeth Nienhuis
 teacher2: Algleidy Zerpa
 teacher3: Alfredo Flores
